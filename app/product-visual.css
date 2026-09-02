@@ -1,0 +1,43 @@
+.pcl-product-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pcl-product-visual > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.pcl-product-visual.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  color: #a0a5ad;
+}
+
+.pcl-product-visual.placeholder svg {
+  width: 42px;
+}
+
+.product-gallery .pcl-product-visual,
+.compare-product-head .pcl-product-visual,
+.related-products .pcl-product-visual {
+  padding: 10px;
+  background: radial-gradient(circle at 50% 42%, #3a3b3e, #252629 72%);
+}
+
+.product-gallery .pcl-product-visual {
+  padding: clamp(14px, 2.4vw, 30px);
+}

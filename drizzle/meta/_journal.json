@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1788008275701,
+      "tag": "0000_mature_wildside",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1788012100000,
+      "tag": "0001_case_samples",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788216247340,
+      "tag": "0002_melted_tempest",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1788221586993,
+      "tag": "0003_adorable_marauders",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1788236666082,
+      "tag": "0004_busy_lethal_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1788246113791,
+      "tag": "0005_sticky_dorian_gray",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1788336000000,
+      "tag": "0006_anonymize_demo_identity",
+      "breakpoints": true
+    }
+  ]
+}

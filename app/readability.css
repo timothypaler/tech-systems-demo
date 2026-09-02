@@ -1,0 +1,228 @@
+/* Site-wide legibility and contrast pass. Keep this file imported after the base theme. */
+:root {
+  --readable-orange: #b84300;
+  --readable-orange-button: #b63f00;
+  --readable-muted: #5b636d;
+  --readable-muted-dark: #b8c0cb;
+}
+
+small {
+  font-size: 13px !important;
+  line-height: 1.55;
+}
+
+input,
+select,
+textarea {
+  font-size: 14px !important;
+}
+
+button,
+label {
+  line-height: 1.4;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #68707a !important;
+  opacity: 1;
+}
+
+/* Shared brand and demo surfaces */
+.brand > span > span,
+.ops-auth-brand strong {
+  color: var(--readable-orange) !important;
+}
+
+.dark-header .brand > span > span,
+.cctv-page .brand > span > span {
+  color: #ff9654 !important;
+}
+
+.demo-environment-badge span {
+  color: #d0d6dd !important;
+  font-size: 12px !important;
+}
+
+.demo-environment-badge strong {
+  color: #ff9b61 !important;
+  font-size: 12px !important;
+}
+
+/* Homepage */
+.site-shell :is(.section-kicker, .summary-type, .product-card > small, .branch-primary small) {
+  color: var(--readable-orange) !important;
+}
+
+.site-shell :is(.category-item small, .preset-button small, .panel-label, .build-summary > small, .summary-stats span, .product-card p, .branch-contact span, .map-note, .branch-primary p) {
+  color: var(--readable-muted) !important;
+}
+
+.site-shell .section-heading h2 span {
+  color: #545b64 !important;
+}
+
+.site-shell :is(.assembly-part small, .power-line, .power-line small) {
+  color: var(--readable-muted-dark) !important;
+}
+
+.site-shell .solution-list small {
+  color: #c0c7d0 !important;
+}
+
+.site-shell :is(.footer-brand p, footer > div > a, .footer-cta span, .footer-bottom) {
+  color: #adb5bf !important;
+}
+
+/* Catalog, checkout and customer pages */
+.commerce-shop :is(.shop-filters label, .commerce-product-copy p, .commerce-product-copy > small:last-child, .cart-line-items small, .service-option small, .checkout-section > label, .cart-total > div:not(.checkout-actions), .cart-total .grand small),
+.commerce-page :is(.product-copy > p, .product-stock-grid span, .spec-table span, .warranty-list small, .community-list p, .community-list small, .account-record small, .account-order small, .quote-customer label, .quote-notes) {
+  color: var(--readable-muted) !important;
+}
+
+.commerce-shop :is(.commerce-shop-hero > label > span, .commerce-shop-hero p) {
+  color: #c4cbd4 !important;
+}
+
+.commerce-shop :is(.shop-filters > div button, .commerce-product-copy > small:first-child),
+.commerce-page :is(.commerce-page-hero > span, .product-copy > span, .account-eyebrow, .compare-product-head small, .related-products small) {
+  color: var(--readable-orange) !important;
+}
+
+.commerce-product-card > footer a {
+  color: #20242a !important;
+  background: #fff !important;
+}
+
+.commerce-product-media > span.stock-out {
+  background: #5f6771 !important;
+}
+
+/* Builder */
+.simple-builder :is(.simple-builder-slots strong, .simple-builder-slots small, .simple-builder-slots em, .simple-builder-products-head > b, .simple-product-copy p) {
+  color: var(--readable-muted) !important;
+}
+
+.simple-builder :is(.simple-builder-header > span, .performance-copy, .selected-parts small, .compatibility-panel > div span, .build-total span, .build-total small, .builder-service-panel label) {
+  color: var(--readable-muted-dark) !important;
+}
+
+.simple-builder :is(.simple-builder-products-head span, .simple-product-copy small, .simple-product-copy a) {
+  color: var(--readable-orange) !important;
+}
+
+/* Shared power-and-continuity solution page */
+.solution-page :is(.back-link, .solution-hero-copy > p, .solution-services p, .service-list small, .solution-footer p) {
+  color: var(--readable-muted-dark) !important;
+}
+
+.solution-hero h1 em {
+  color: #9ca5b0 !important;
+}
+
+.solution-page :is(.solution-section-head > span, .solution-product-grid article > small) {
+  color: var(--readable-orange) !important;
+}
+
+.solution-product-grid p {
+  color: var(--readable-muted) !important;
+}
+
+.service-list b {
+  color: #aeb6c1 !important;
+}
+
+/* CCTV, network and smart-home experiences */
+.cctv-copy h1 em {
+  color: #9aa3ae !important;
+}
+
+.cctv-copy > p,
+.cctv-copy > a,
+.camera-grid small,
+.cctv-process p,
+.cctv-page .service-footer p {
+  color: #b6bec9 !important;
+}
+
+.cctv-product-grid p {
+  color: #59616b !important;
+}
+
+.cctv-products :is(.cctv-section-head span, .cctv-product-grid article > b) {
+  color: var(--readable-orange) !important;
+}
+
+.network-copy > :is(a, p),
+.network-delivery p {
+  color: #405f66 !important;
+}
+
+.layer-list article > div p {
+  color: #b8d0d3 !important;
+}
+
+.smart-copy > p,
+.smart-welcome span,
+.smart-device-grid article > span,
+.smart-device-grid small,
+.routine-grid p,
+.smart-steps small {
+  color: #545f54 !important;
+}
+
+.smart-copy > span {
+  color: #9d4316 !important;
+}
+
+/* Operations dashboard */
+.ops-admin :is(.ops-muted, .ops-card small, .ops-settings-fields label > small, .ops-user-copy small, .ops-security-log time),
+.ops-auth-page .ops-auth-card > small {
+  color: #606870 !important;
+}
+
+.ops-admin :is(.ops-product-copy > span, .ops-notification-list article > div:nth-child(2) > span, .ops-user-copy span, .ops-commerce-form > header span, .ops-record-list > header span) {
+  color: var(--readable-orange) !important;
+}
+
+.ops-auth-card .ops-eyebrow {
+  color: var(--readable-orange) !important;
+}
+
+/* Buttons and labels that previously used white text on bright orange */
+:is(.summary-button, .footer-cta > a, .commerce-product-card > footer button, .checkout-actions button:last-child, .product-actions .primary, .compare-product-head button, .track-search button, .ops-auth-card form > button, .ops-primary, .ops-guide-links button, .cctv-copy > div a:first-child, .simple-product-grid article.selected > button, .complete-build, .demo-payment-approve, .solution-actions a:first-child) {
+  color: #fff !important;
+  border-color: var(--readable-orange-button) !important;
+  background: var(--readable-orange-button) !important;
+}
+
+.hero .primary-cta:hover {
+  color: #fff !important;
+  background: var(--readable-orange-button) !important;
+}
+
+.network-copy > div a:first-child {
+  color: #fff !important;
+  border-color: #087579 !important;
+  background: #087579 !important;
+}
+
+.commerce-shop :is(.checkout-choice-grid button.active, .payment-options button.active) {
+  color: var(--readable-orange) !important;
+  border-color: var(--readable-orange) !important;
+}
+
+.track-page :is(.track-summary span, .track-progress small, .track-grid header small, .track-items small) {
+  color: var(--readable-muted) !important;
+}
+
+.track-notifications > article > span {
+  color: var(--readable-orange) !important;
+}
+
+@media (max-width: 560px) {
+  .demo-environment-badge span,
+  .site-shell .hero-system-track span {
+    font-size: 12px !important;
+  }
+}

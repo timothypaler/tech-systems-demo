@@ -5,6 +5,9 @@ import { setRuntimeEnv, type RuntimeEnv } from "../lib/runtime-env";
 
 interface Env {
   ASSETS: Fetcher;
+  BUCKET: R2Bucket;
+  ADMIN_BOOTSTRAP_USERNAME?: string;
+  ADMIN_BOOTSTRAP_PASSWORD?: string;
   DB: D1Database;
   IMAGES: {
     input(stream: ReadableStream): {

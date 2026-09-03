@@ -26,3 +26,6 @@ timeout \
   --kill-after="${SITES_BUILD_KILL_AFTER:-10s}" \
   "${SITES_BUILD_TIMEOUT:-3m}" \
   "${vinext}" build
+
+rm -rf "${SITES_PROJECT_ROOT}/dist/server/drizzle"
+cp -R "${SITES_PROJECT_ROOT}/drizzle" "${SITES_PROJECT_ROOT}/dist/server/drizzle"
